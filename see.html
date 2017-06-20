@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随手拍</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+	<link type="text/css" rel="stylesheet" media="all" href="styles/master.css">
+	<style>
+		@media screen and (max-width:321px){
+			.zi_s20 {font-size:10px !important;}
+			.zi_s22 {font-size:12px !important;}
+			.zi_s26 {font-size:15px !important;}
+			.zi_s30 {font-size:18px !important;}
+		}
+		@media screen and (min-width:321px) and (max-width:400px){
+			.zi_s20 {font-size:11px !important;}
+			.zi_s22{font-size:13px !important;}
+			.zi_s26{font-size:16px !important;}
+			.zi_s30 {font-size:19px !important;}
+		}
+		@media screen and (min-width:400px){
+			.zi_s20 {font-size:12px !important;}
+			.zi_s22 {font-size:14px !important;}
+			.zi_s26 {font-size:17px !important;}
+			.zi_s30 {font-size:20px !important;}
+		}
+	</style>
+</head>
+<body style="background:#211430">
+
+<main>
+	<div class="main-bg">
+		<img src="images/main_bg.jpg" alt="">
+		<i class="rules-text"><img src="images/rules.png" alt=""></i>
+	</div>
+
+	<div class="upload-box">
+		<h1>上传参赛作品</h1>
+		<div class="see-img">
+			<h3 class="ell">优美的立交桥夜景</h3>
+			<div class="picture">
+				<img src="images/list.jpg" alt="">
+				<i>1234</i>
+			</div>
+			<div class="text clearfix">
+				<span class="fl">作者：<i>李易峰</i></span>
+				<label class="fr">12536</label>
+			</div>
+			<p>当前排名：125</p>
+			<div class="btn-two clearfix">
+				<a class="fl" href="javascript:;">点赞</a>
+				<!--点赞之后-->
+				<!--<a class="fl" href="javascript:;">帮Ta分享</a>-->
+				<a class="fr" href="upload.html">我要参赛</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div  class="mask" style="display:none;"></div>
+	<div class="rules" style="display:none;">
+		<h2 class="zi_s30 rules-text">活动规则</h2>
+		<div class="highatou">
+			<p>1、关注“南岸旅游”官方微信公众号，并回复“南岸夜景”即可参与活动或者点击菜单栏上的“随手拍南岸夜景”参加活动；</p>
+				<p>2、上传作品前，请填写真实姓名及联系方式，活动结束后凭身份信息领取奖品；</p>
+				<p>3、点击“我要上传”将作品上传至“随手拍南岸夜景”，参与投票活动，每人最多上传一幅作品；</p>
+				<p>4、每人每天可以邀请好友投票，在活动结束后，我们将为投票数排名前13名发放奖品；</p>
+				<p>5、活动时间：2017年6月20日—2017年7月20日</p>
+				<p>奖品领取时间：2017年7月21日—2017年7月31日</p>
+				<p>奖品领取方式：活动结束后，以南岸旅游微信公布为准</p>
+				<p>6、奖品设置：</p>
+				<p>一等奖（投票排名第1名）：港澳五日游（含香港维多利亚夜景）</p>
+				<p>二等奖（投票排名第2名）：水墨江南六日游（含上海外滩夜景）</p>
+				<p>三等奖（投票排名第3名）：奖金1000元</p>
+				<p>优秀奖（投票排名第4-13名）：奖金100元</p>
+				<p>上传作品为参赛者自主上传，所涉作品所有权问题由上传者自行承担，本次活动最终解释权归南岸区旅游局所有。</p>
+		</div>
+		<a class="zi_s24 okk" href="javascript:;">知道了</a>
+	</div>
+	<div class="min-tk" style="display:none;">上传成功</div>
+</main>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/master.js"></script>
+<!--<script src="layer/mobile/layer.js"></script>-->
+
+<script>
+
+	$(function(){
+		//弹框
+		$(".rules-text").click(function(){
+			$(".rules").show();
+			$(".mask").show();
+		});
+		$(".okk").click(function(){
+			$(".rules").hide();
+			$(".mask").hide();
+		});
+
+	})
+</script>
+
+</body>
+</html>
